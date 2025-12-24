@@ -17,7 +17,7 @@ body{
   display:flex;
 }
 
-/* LEFT */
+/* ------------------------------    LEFT  --------------------------------- */
 .left{
   width:305px;
   background:#fff;
@@ -67,7 +67,7 @@ body{
   font-size:13px;
 }
 
-/* INFO */
+/* ---------------------------- INFO   ----------------------------- */
 .info div{
   display:flex;
   font-size:13px;
@@ -111,7 +111,7 @@ h4{
   font-size:14px;
 }
 
-/* PROGRESS */
+/* -------------------------- PROGRESS  ----------------------- */
 .progress{
   margin-bottom:12px;
   font-size:12px;
@@ -339,7 +339,7 @@ transform: rotate(46deg);
 
 .download-cv{
   margin-top:25px;
-  background:#FFB400;              /* sariq rang */
+  background:#FFB400;             
   color:#000;
   padding:14px 16px;
   display:flex;
@@ -354,7 +354,7 @@ transform: rotate(46deg);
 .download-icon{
   width:28px;
   height:28px;
-  background:#e0a800;              /* biroz to‘q sariq */
+  background:#e0a800;             
   display:flex;
   align-items:center;
   justify-content:center;
