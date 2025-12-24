@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+  <style>
+/* .extra-skills li{
+  
+  margin-left:0 !important;
+} */
+
+
+  </style>
+</head>
+
+<body>
+
+<div class="app">
+
+<!-- LEFT -->
+<aside class="left">
+  <div class="avatar">
+    <img src="man_2.png" alt="">
+  </div>
+  <h3><%=user.name%></h3>
+  <p class="role"><%=user.profession%></p>
+
+  <div class="socials">
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-linkedin-in"></i>
+    <i class="fab fa-github"></i>
+  </div>
+
+  <div class="info">
+    <div><b><%=user.age%>:</b><span>20</span></div>
+    <div><b><%=user.residence%></b><span>S.Korea</span></div>
+    <div><b><%=user.residence%></b><span class="green">Available</span></div>
+    <div><b><%=user.adress%></b><span>S.Korea, Busan</span></div>
+  </div>
+
+  <h4>languages</h4>
+  <div class="progress">
+    <div class="progress-top"><label><%=user.languages[0]%></label><span>100%</span></div>
+    <div class="bar"><span style="width:100%"></span></div>
+  </div>
+  <div class="progress">
+    <div class="progress-top"><label><%=user.languages[1]%></label><span>80%</span></div>
+    <div class="bar"><span style="width:80%"></span></div>
+  </div>
+  <div class="progress">
+    <div class="progress-top"><label><%=user.languages[2]%></label><span>60%</span></div>
+    <div class="bar"><span style="width:60%"></span></div>
+  </div>
+
+  <h4>Skills</h4>
+  <div class="progress">
+    <div class="progress-top"><label><%=user.skills[0]%></label><span>90%</span></div>
+    <div class="bar"><span style="width:90%"></span></div>
+  </div>
+  <div class="progress">
+    <div class="progress-top"><label><%=user.skills[1]%></label><span>85%</span></div>
+    <div class="bar"><span style="width:85%"></span></div>
+  </div>
+  <div class="progress">
+    <div class="progress-top"><label><%=user.skills[1]%></label><span>80%</span></div>
+    <div class="bar"><span style="width:80%"></span></div>
+  </div>
+  <h4 class="extra-title">Extra Skills</h4>
+
+<ul class="extra-skills">
+  <li>
+    <span class="extra-icon"></span>
+    &nbsp;&nbsp;&nbsp; <%=user.extra_skills[0]%>
+  </li>
+  <li>
+    <span class="extra-icon"></span>
+    &nbsp;&nbsp;&nbsp; <%=user.extra_skills[1]%>
+  </li>
+  <li>
+    <span class="extra-icon"></span>
+     &nbsp;&nbsp;&nbsp;
+    <%=user.extra_skills[2]%>
+  </li>
+  <li>
+    <span class="extra-icon"></span>
+    &nbsp;&nbsp;&nbsp; <%=user.extra_skills[3]%>
+  </li>
+</ul>
+
+<div class="download-cv">
+  <span>DOWNLOAD CV</span>
+  <span class="download-icon">
+    <span class="fa fa-download"></span>
+  </span>
+</div>
+
+</aside>
+
+<!-- CENTER -->
+<main class="center">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Software Engineer in<br>IT Company</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam obcaecati ab quos! Inventore, cumque? 
+        Veritatis maiores distinctio  </p>
+      <button>HIRE ME →</button>
+    </div>
+
+    <div class="hero-img">
+<img src="man_1.png" alt="">
+    </div>
+
+    <span class="shape circle y"></span>
+    <span class="shape square g"></span>
+    <span class="shape square b"></span>
+    <span class="shape triangle r"></span>
+    <span class="shape circle  extra1"></span>
+    <span class="shape circle  extra2"></span>
+  </section>
+
+  <!-- SERVICES -->
+ <section class="services">
+  <h2>My Services</h2>
+  <p class="sub">
+    Amet minim mollit non deserunt ullamco est sit aliqua dolor<br>
+    do amet sint. Velit officia consequat duis enim velit mollit.
+  </p>
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="icon"><i class="fas fa-code"></i></div>
+      <h3>Web Development</h3>
+      <p>Blog, E-Commerce</p>
+    </div>
+
+    <div class="card">
+      <div class="icon"><i class="fas fa-paint-brush"></i></div>
+      <h3>UI/UX Design</h3>
+      <p>Mobile App, Website Design</p>
+    </div>
+
+    <div class="card">
+      <div class="icon"><i class="fas fa-microphone"></i></div>
+      <h3>Sound Design</h3>
+      <p>Voice Over, Beat Making</p>
+    </div>
+
+    <div class="card">
+      <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+      <h3>Mobile App Design</h3>
+      <p>Character Design, Back End</p>
+    </div>
+
+    <div class="card">
+      <div class="icon"><i class="fas fa-camera"></i></div>
+      <h3>Photography</h3>
+      <p>Portrait, Product Photography</p>
+    </div>
+
+    <div class="card active">
+      <h3>Advertising</h3>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing
+        and typesetting industry.
+      </p>
+      <a href="#">Order Now →</a>
+    </div>
+
+  </div>
+</section>
+
+
+</main>
+
+<!-- RIGHT -->
+<aside class="right">
+  <div class="tool"  id="moon"><i class="fas fa-moon"></i></div>
+  <div class="tool"><i class="fas fa-house"></i></div>
+  <div class="tool"><i class="fas fa-user"></i></div>
+  <div class="tool"><i class="fas fa-file-lines"></i></div>
+  <div class="tool"><i class="fas fa-briefcase"></i></div>
+  <div class="tool"><i class="fas fa-phone"></i></div>
+   <div class="tool"><i class="fas fa-comment-dots"></i></div>
+</aside>
+
+
+</div>
+
+</body>
+</html>
